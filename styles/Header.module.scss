@@ -1,0 +1,23 @@
+@import "colors";
+@import "font-weight";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 88%;
+  margin: 0 auto;
+  @media(max-width: 556px) {
+    flex-direction: column;
+  }
+}
+
+
+.nav {
+  display: flex;
+  text-transform: uppercase;
+
+  @media(max-width: 556px) {
+    padding-bottom: 2.5rem;
+  }
+}

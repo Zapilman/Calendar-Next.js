@@ -1,0 +1,40 @@
+@import "colors";
+@import "font-weight";
+
+.header {
+  position: relative;
+  min-height: 2rem;
+  max-width: 95%;
+  font-weight: $fw-bold;
+  text-align: center;
+  margin: 0 auto;
+  color: $grey;
+  border-bottom: 1px solid $dark-white;
+
+  & i{
+    width: 0.56rem;
+    height: 0.56rem;
+    border-top: 2px solid $grey;
+    border-left: 2px solid $grey;
+    display: block;
+
+    position: absolute;
+    top: 10%;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+
+.header .previous {
+  left: 0;
+  transform: rotate(-45deg) translate(50%,50%);
+}
+
+.header .next {
+  right: 0;
+  transform: rotate(135deg) translate(50%,50%);
+
+}

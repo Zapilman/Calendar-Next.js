@@ -1,0 +1,35 @@
+@import "font-weight";
+@import "colors";
+
+
+.container {
+  color: $dark;
+  max-width: 67.5rem;
+  margin: 6.1rem auto 0;
+  &_title {
+    font-weight: $fw-bold;
+    font-size: 1.7rem;
+  }
+  &_text {
+    margin-top: 3.9rem;
+    font-weight: $fw-light;
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+    line-height: 1.5rem;
+    & p:not(:first-child){
+      margin-top: 1.25rem;
+    }
+    @media(max-width: 768px) {
+      margin-top: 2rem;
+    }
+  }
+  @media(max-width: 1200px) {
+    padding: 0 2.5rem 0;
+  }
+  @media(max-width: 768px) {
+    margin-top: 1.25rem;
+    text-align: center;
+  }
+}
+
+
